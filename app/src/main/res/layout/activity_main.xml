@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hyein.myapplication.MainActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:text="pizza(16000won)"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pizza" />
+
+        <EditText
+            android:layout_width="144dp"
+            android:layout_height="31dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/pizzawon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <TextView
+            android:text="Spaghetti(11000won)"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spa" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/spawon"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <TextView
+            android:text="salad(4000won)"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sal" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/salwon"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:weightSum="1">
+
+        <CheckBox
+            android:text="membership card DC:7% "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/membership" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/rGroup"
+            android:layout_height="52dp" >
+
+            <RadioButton
+                android:text="pickles"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:id="@+id/pickles" />
+
+            <RadioButton
+                android:text="source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/source" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="162dp"
+                android:layout_height="64dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/img"
+                android:layout_weight="0.79" />
+
+            <Button
+                android:text="order"
+
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/order" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_weight="0.57">
+
+        <TextView
+            android:text="cnt : "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" />
+
+        <TextView
+            android:text="pice : "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5" />
+
+        <TextView
+            android:text="select : "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6" />
+    </LinearLayout>
+
+</LinearLayout>
